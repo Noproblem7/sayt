@@ -18,3 +18,7 @@ class PostListView(ListView):
     model = Post
     context_object_name = 'posts'
     template_name = 'post_list.html'
+
+
+def home(request):
+    return render(request, 'home.html')
